@@ -4,11 +4,11 @@ import Image from "next/image";
 const Section = () => {
   return (
     <div>
-      <h2 className="font-['spiderfont'] text-6xl text-red-600 mt-20">
+      <h2 className=" font-bold font-sans text-6xl text-red-600 mt-20 mb-16">
         CHARACTERS
       </h2>
       <div className="bg-gradient-to-r from-red-500 from-30% to-blue-800 to-90% p-8 mt-9 flex py-0">
-        <div>
+        <div className="hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/spiderman-image2.png`}
             width={550}
@@ -29,12 +29,18 @@ const Section = () => {
             <h2 className="text-white text-left text-6xl justi font-semibold mb-4 mt-9 font-['spiderfont']">
               SPIDERMAN
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Peter Benjamin Parker
               <br></br>
+              </p>
+              
+              <p className="text-white hidden sm:hidden md:hidden lg:block">
               <strong>Alias:</strong> Spiderman
               <br></br>
+              </p>
+              
+              <p className="text-white hidden sm:hidden md:hidden lg:block">
               <br></br>
               <strong>Información:</strong>
               <br></br>
@@ -44,7 +50,7 @@ const Section = () => {
               combatir el crimen como el Hombre Araña.
             </p>
 
-            <button className="bg-blue-800 max-w-{120px} border-2 border-white border-solid text-white mt-9 py-2 px-12 rounded-3xl hover:bg-red-400">
+            <button className="sm:block bg-blue-800 min-w-full border-2 border-white border-solid text-white mt-6 mb-6 py-2 px-12 rounded-3xl hover:bg-red-400">
               {" "}
               View Info{" "}
             </button>
@@ -66,7 +72,7 @@ const Section = () => {
             <h2 className="text-white text-left text-6xl justi font-semibold mb-4 mt-9 font-['spiderfont']">
               SPIDERMAN
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Miles Gonzalo Morales
               <br></br>
@@ -82,13 +88,13 @@ const Section = () => {
               Ultimate.
             </p>
 
-            <button className="bg-black max-w-{120px} border-2 border-red-400 border-solid text-white mt-9 py-2 px-12 rounded-3xl hover:bg-red-400">
+            <button className="bg-black min-w-full border-2 border-red-400 border-solid text-white mt-6 mb-6 py-2 px-12 rounded-3xl hover:bg-red-400">
               {" "}
               View Info{" "}
             </button>
           </div>
         </div>
-        <div className="flex-initial">
+        <div className="flex-initial hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/Miles-morales-2.png`}
             width={550}
@@ -99,7 +105,7 @@ const Section = () => {
       </div>
 
       <div className="bg-gradient-to-r from-black from-20% to-pink-500 to-90% p-8 mt-1 flex py-0">
-        <div className="flex-initial">
+        <div className="flex-initial hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/spider-gwen-2.png`}
             width={550}
@@ -120,7 +126,7 @@ const Section = () => {
             <h2 className="text-white text-left text-6xl justi font-semibold mb-4 mt-9 font-['spiderfont']">
               SPIDER GWEN
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Gwendolyne Maxine Stacy
               <br></br>
@@ -137,7 +143,7 @@ const Section = () => {
               poder conlleva una gran responsabilidad.
             </p>
 
-            <button className="bg-pink-600 max-w-{120px} border-2 border-white border-solid text-white mt-9 py-2 px-12 rounded-3xl hover:bg-pink-300">
+            <button className="bg-pink-600 min-w-full border-2 border-white border-solid text-white mt-6 mb-6 py-2 px-12 rounded-3xl hover:bg-pink-300">
               {" "}
               View Info{" "}
             </button>
@@ -145,12 +151,12 @@ const Section = () => {
         </div>
       </div>
 
-      <h2 className="font-['spiderfont'] text-6xl text-red-600 mt-20">
+      <h2 className=" font-bold text-6xl text-red-600 mt-16 mb-16">
         VILLAINS
       </h2>
 
       <div className="bg-gradient-to-r from-purple-900 from-20% to-black to-90% p-8 mt-1 flex py-0">
-        <div className="flex-initial">
+        <div className="flex-initial hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/Venom-7.png`}
             width={550}
@@ -161,17 +167,17 @@ const Section = () => {
         <div className="max-w-2xl mx-auto">
           <div className="border-4 mr-15 mt-5">
             <Image
-              src={`/assets/venom-gif.gif`}
+              src={`/assets/venom-4.jpg`}
               width={663}
               height={74}
               alt={`Logo`}
             />
           </div>
           <div>
-            <h2 className="text-white text-left text-6xl justify- font-semibold mb-2 mt-9 font-['spiderfont']">
+            <h2 className="text-white text-left text-6xl font-semibold mb-2 mt-11 font-['spiderfont']">
               VENOM
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Edward Charles Allan Brock
               <br></br>
@@ -187,7 +193,7 @@ const Section = () => {
               por Spider-Man, convirtiéndose en el primer Venom.
             </p>
 
-            <button className="bg-black max-w-{120px} border-2 border-purple-800 border-solid text-white mb-5 mt-5 py-2 px-12 rounded-3xl hover:bg-purple-400">
+            <button className="bg-black min-w-full border-2 border-purple-800 border-solid text-white mb-6 mt-6 py-2 px-12 rounded-3xl hover:bg-purple-400">
               {" "}
               View Info{" "}
             </button>
@@ -199,7 +205,7 @@ const Section = () => {
         <div className="max-w-2xl mx-auto">
           <div className="border-4 mr-15 mt-7">
             <Image
-              src={`/assets/green-goblin3.gif`}
+              src={`/assets/green-goblin-6.jpg`}
               width={663}
               height={74}
               alt={`Logo`}
@@ -209,7 +215,7 @@ const Section = () => {
             <h2 className="text-white text-left text-6xl justi font-semibold mb-4 mt-9 font-['spiderfont']">
               GREEN GOBLIN
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Norman Osborn
               <br></br>
@@ -223,13 +229,13 @@ const Section = () => {
               luego lo llevó a convertirse en Green Goblin.
             </p>
 
-            <button className="bg-purple-900 max-w-{120px} border-2 border-green-500 border-solid text-white mt-9 py-2 px-12 rounded-3xl hover:bg-purple-400">
+            <button className="bg-purple-900 min-w-full border-2 border-green-500 border-solid text-white mb-6 mt-6 py-2 px-12 rounded-3xl hover:bg-purple-400">
               {" "}
               View Info{" "}
             </button>
           </div>
         </div>
-        <div className="flex-initial">
+        <div className="flex-initial hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/Green-goblin-4.png`}
             width={550}
@@ -239,8 +245,8 @@ const Section = () => {
         </div>
       </div>
 
-      <div className="bg-gradient-to-r from-green-900 from-20% to-yellow-400 to-90% p-8 mt-1 flex py-0">
-        <div className="flex-initial">
+      <div className="bg-gradient-to-r from-green-900 from-20% to-yellow-600 to-90% p-8 mt-1 flex py-0">
+        <div className="flex-initial hidden sm:hidden md:hidden lg:block">
           <Image
             src={`/assets/Electro-2.png`}
             width={550}
@@ -251,7 +257,7 @@ const Section = () => {
         <div className="max-w-2xl mx-auto">
           <div className="border-4 mr-15 mt-5">
             <Image
-              src={`/assets/electro3.gif`}
+              src={`/assets/electro-4.jpg`}
               width={663}
               height={74}
               alt={`Logo`}
@@ -261,7 +267,7 @@ const Section = () => {
             <h2 className="text-white text-left text-6xl justi font-semibold mb-4 mt-9 font-['spiderfont']">
               ELECTRO
             </h2>
-            <p className="text-white">
+            <p className="text-white hidden sm:hidden md:hidden lg:block">
               {" "}
               <strong>Nombre Completo:</strong> Maxwell Dillon
               <br></br>
@@ -277,7 +283,7 @@ const Section = () => {
                 eléctrica.
             </p>
 
-            <button className="bg-green-900 max-w-{120px} border-2 border-yellow-300 border-solid text-white mt-9 py-2 px-12 rounded-3xl hover:bg-green-300">
+            <button className="bg-green-900 min-w-full border-2 border-yellow-500 border-solid text-white mb-6 mt-6 py-2 px-12 rounded-3xl hover:bg-green-300">
               {" "}
               View Info{" "}
             </button>
